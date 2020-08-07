@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">NYBooks</string>
+
+    <!-- Commons -->
+
+    <!-- Books Activity -->
+    <string name="books_title">Books</string>
+
+    <!-- Outra Activity -->
+
 </resources>

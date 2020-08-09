@@ -14,16 +14,22 @@ class BooksViewModel : ViewModel() {
     val booksLiveData: MutableLiveData<List<Book>> = MutableLiveData()
 
     fun getBooks() {
-    //    booksLiveData.value = createFakeBooks()
-        ApiService.service.getBooks().enqueue(object: Callback<BookBodyResponse> { // parâmetros hard coded no getBooks()
+        ApiService.service.getBooks().enqueue(object: Callback<BookBodyResponse> {
 
             override fun onResponse(call: Call<BookBodyResponse>, response: Response<BookBodyResponse>) {
                 if (response.isSuccessful) {
                     val books: MutableList<Book> = mutableListOf()
                     
                     response.body()?.let {bookBodyResponse ->
-                        https://youtu.be/hgfJ56W-G_U?t=334
+                        for (result in bookBodyResponse.bookResults) {
+                            val book = Book(
+                                title = result.bookDetailsResponse[0].title,
+                                author = result.bookDetailsResponse[0].author
+                            )
+                            books.add(book)
+                        }
                     }
+                    booksLiveData.value = books
                 }
             }
 
@@ -32,14 +38,5 @@ class BooksViewModel : ViewModel() {
             }
 
         })
-    }
-
-    fun createFakeBooks(): List<Book> {
-        return listOf(
-                Book("Title 2", "Author 1"),
-                Book("Title 2", "Author 2"),
-                Book("Title 3", "Author 3"),
-                Book("Title 4", "Author 4")
-        )
     }
 }

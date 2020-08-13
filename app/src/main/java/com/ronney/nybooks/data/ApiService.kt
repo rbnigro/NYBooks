@@ -6,8 +6,12 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 object ApiService {
 
     private fun initRetrofit(): Retrofit {
+
+        val urlB = "https://api.nytimes.com/svc/books/v3/"
+        val urlM = "https://api.nytimes.com/svc/movies/v2/"
+
         return Retrofit.Builder()
-            .baseUrl("https://api.nytimes.com/svc/books/v3/")
+            .baseUrl(urlB)
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
     }

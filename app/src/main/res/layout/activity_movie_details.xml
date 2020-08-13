@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:textStyle="bold"
-    tools:context=".presentation.details.BookDetailsActivity">
+    tools:context=".presentation.details.MovieDetailsActivity">
 
     <include layout="@layout/include_toolbar"/>
 
@@ -16,10 +16,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="@string/book_details_title_label" />
+        android:text="@string/movie_details_title_label" />
 
     <TextView
-        android:id="@+id/bookDetailsTitle"
+        android:id="@+id/movieDetailsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -33,14 +33,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:text="@string/book_details_description_label" />
+        android:text="@string/movie_details_summary_label" />
 
     <TextView
-        android:id="@+id/bookDetailsDescription"
+        android:id="@+id/movieDetailsSummary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        tools:text="Description 1" />
+        tools:text="Summary 1" />
 
 </LinearLayout>

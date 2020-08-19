@@ -30,7 +30,7 @@ class BooksActivity : BaseActivity() {
                         LinearLayoutManager(this@BooksActivity, RecyclerView.VERTICAL, false)
                     setHasFixedSize(true)
                     adapter = BooksAdapter(books) { book ->
-                        val intent = BookDetailsActivity.getStartIntrent(
+                        val intent = BookDetailsActivity.getStartIntrent( // forma correta de instanciar #9
                             this@BooksActivity,
                             book.title,
                             book.description

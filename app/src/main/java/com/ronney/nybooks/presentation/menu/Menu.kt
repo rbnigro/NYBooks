@@ -19,17 +19,17 @@ class Menu : BaseActivity() {
         setContentView(R.layout.activity_menu)
 
         action_books.setOnClickListener {
-            val intent = Intent(applicationContext, BooksActivity::class.java)
+            val intent = Intent(this, BooksActivity::class.java)
             startActivity(intent)
         }
 
         action_movies.setOnClickListener{
-            val intent = Intent(applicationContext, MoviesActivity::class.java)
+            val intent = Intent(this, MoviesActivity::class.java)
             startActivity(intent)
         }
 
         action_databind.setOnClickListener{
-            val intent = Intent(applicationContext, DataBindActivity::class.java)
+            val intent = Intent(this, DataBindActivity::class.java)
             startActivity(intent)
         }
     }

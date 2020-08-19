@@ -16,7 +16,7 @@ class BooksViewModel : ViewModel() {
     val viewFlipperLiveData: MutableLiveData<Pair<Int, Int?>> = MutableLiveData()
 
     fun getBooks() {
-        ApiService.serviceBook.getBooks().enqueue(object : Callback<BookBodyResponse> {
+        ApiService.serviceBook.getBooks().enqueue(object: Callback<BookBodyResponse> {
 
             override fun onResponse(
                 call: Call<BookBodyResponse>,

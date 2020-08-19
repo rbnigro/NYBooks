@@ -6,10 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".presentation.movies.MoviesActivity">
 
-    <include layout="@layout/include_toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+    <include layout="@layout/include_toolbar"/>
 
     <ViewFlipper
         android:id="@+id/viewFlipperMovies"

@@ -7,6 +7,9 @@
     <string name="error_404">Não localizado</string>
     <string name="error_500_generic">Erro catastrófico</string>
 
+    <!-- Menu Activity -->
+    <string name="menu_buttom">Ver Projetos</string>
+
     <!-- Books Activity -->
     <string name="books_title">Books</string>
 
@@ -22,5 +25,8 @@
     <string name="movie_details_title">Movie Details</string>
     <string name="movie_details_title_label">Title</string>
     <string name="movie_details_summary_label">Summary</string>
+
+    <!-- Data Bind Activity -->
+    <string name="data_bind_title">Data Bind</string>
 
 </resources>

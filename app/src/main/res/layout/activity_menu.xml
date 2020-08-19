@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/action_books"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/books_title"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:typeface="normal"
+        />
+
+    <Button
+        android:id="@+id/action_movies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/movies_title"
+        android:textAllCaps="false"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/action_databind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/data_bind_title"
+        android:textAllCaps="false"
+        android:textSize="21sp" />
+
+</LinearLayout>

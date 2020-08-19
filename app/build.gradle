@@ -28,6 +28,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    dataBinding {
+        enabled = true
+    }
 }
 
 ext {
@@ -46,12 +54,15 @@ dependencies {
 
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+    implementation 'com.google.android.material:material:1.1.0'
 
     kapt("com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion")
     implementation "com.squareup.moshi:moshi:$moshiVersion"
 
     implementation "androidx.recyclerview:recyclerview:$androidxVersion"
     implementation "androidx.recyclerview:recyclerview-selection:1.1.0-rc01"
+
+    implementation "androidx.fragment:fragment-ktx:1.2.4"
 
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

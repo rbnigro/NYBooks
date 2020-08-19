@@ -11,7 +11,7 @@ object ApiService {
         val urlM = "https://api.nytimes.com/svc/movies/v2/"
 
         return Retrofit.Builder()
-            .baseUrl(urlB)
+            .baseUrl(urlM)
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
     }

@@ -13,7 +13,7 @@ import com.ronney.nybooks.presentation.details.MovieDetailsActivity
 import kotlinx.android.synthetic.main.activity_movies.*
 import kotlinx.android.synthetic.main.include_toolbar.*
 
-class MoviesActivity  : BaseActivity() {
+class MoviesActivity: BaseActivity() {
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,7 +33,7 @@ class MoviesActivity  : BaseActivity() {
                         val intent = MovieDetailsActivity.getStartIntrent(
                             this@MoviesActivity,
                             movie.displayTitle,
-                            movie.mpaaRating
+                            movie.summaryShort
                         )
                         this@MoviesActivity.startActivity(intent)
                     }

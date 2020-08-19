@@ -10,7 +10,7 @@ import com.ronney.nybooks.presentation.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_book_details.*
 import kotlinx.android.synthetic.main.include_toolbar.*
 
-class BookDetailsActivity : BaseActivity() {
+class BookDetailsActivity: BaseActivity() {
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -5,16 +5,17 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 
 object ApiService {
 
-    private fun initRetrofit(): Retrofit {
+    private val urlB = "https://api.nytimes.com/svc/books/v3/"
+    private val urlM = "https://api.nytimes.com/svc/movies/v2/"
 
-        val urlB = "https://api.nytimes.com/svc/books/v3/"
-        val urlM = "https://api.nytimes.com/svc/movies/v2/"
+    private fun initRetrofit(pURL: String): Retrofit {
 
         return Retrofit.Builder()
-            .baseUrl(urlM)
+            .baseUrl(pURL)
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
     }
 
-    val service: NYTServices = initRetrofit().create(NYTServices::class.java)
+    val serviceBook: NYTServices = initRetrofit(urlB).create(NYTServices::class.java)
+    val serviceMovie: NYTServices = initRetrofit(urlM).create(NYTServices::class.java)
 }

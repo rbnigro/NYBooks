@@ -16,7 +16,7 @@ class MoviesViewModel : ViewModel() {
     val viewFlipperLiveData: MutableLiveData<Pair<Int, Int?>> = MutableLiveData()
 
     fun getMovies() {
-        ApiService.service.getMovies().enqueue(object : Callback<MovieBodyResponse> {
+        ApiService.serviceMovie.getMovies().enqueue(object : Callback<MovieBodyResponse> {
 
             override fun onResponse(
                 call: Call<MovieBodyResponse>,

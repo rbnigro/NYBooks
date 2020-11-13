@@ -10,7 +10,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MoviesViewModel : ViewModel() {
+class MoviesViewModel: ViewModel() {
 
     val moviesLiveData: MutableLiveData<List<Movie>> = MutableLiveData()
     val viewFlipperLiveData: MutableLiveData<Pair<Int, Int?>> = MutableLiveData()

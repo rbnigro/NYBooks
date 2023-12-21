@@ -7,8 +7,6 @@ import android.os.Bundle
 import androidx.annotation.RequiresApi
 import com.ronney.nybooks.R
 import com.ronney.nybooks.presentation.base.BaseActivity
-import kotlinx.android.synthetic.main.activity_movie_details.*
-import kotlinx.android.synthetic.main.include_toolbar.*
 
 class MovieDetailsActivity: BaseActivity() {
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)

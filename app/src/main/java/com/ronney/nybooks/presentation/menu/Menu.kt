@@ -10,7 +10,6 @@ import com.ronney.nybooks.presentation.base.BaseActivity
 import com.ronney.nybooks.presentation.books.BooksActivity
 import com.ronney.nybooks.presentation.databind.DataBindActivity
 import com.ronney.nybooks.presentation.movies.MoviesActivity
-import kotlinx.android.synthetic.main.activity_menu.*
 
 class Menu : BaseActivity() {
 

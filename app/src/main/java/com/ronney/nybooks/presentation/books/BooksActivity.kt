@@ -10,8 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ronney.nybooks.R
 import com.ronney.nybooks.presentation.base.BaseActivity
 import com.ronney.nybooks.presentation.details.BookDetailsActivity
-import kotlinx.android.synthetic.main.activity_books.*
-import kotlinx.android.synthetic.main.include_toolbar.*
 
 class BooksActivity : BaseActivity() {
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)

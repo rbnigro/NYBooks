@@ -3,11 +3,9 @@ package com.ronney.nybooks.presentation.books
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import androidx.recyclerview.widget.RecyclerView
 import com.ronney.nybooks.R
 import com.ronney.nybooks.data.model.Book
-import kotlinx.android.synthetic.main.item_book.view.*
 
 class BooksAdapter(
     private val books: List<Book>,

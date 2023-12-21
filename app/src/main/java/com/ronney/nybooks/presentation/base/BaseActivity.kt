@@ -4,7 +4,6 @@ import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import kotlinx.android.synthetic.main.include_toolbar.*
 
 open class BaseActivity : AppCompatActivity() {
 

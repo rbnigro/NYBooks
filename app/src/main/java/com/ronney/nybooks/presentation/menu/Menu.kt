@@ -2,14 +2,12 @@ package com.ronney.nybooks.presentation.menu
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.*
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.ronney.nybooks.R
 import com.ronney.nybooks.presentation.base.BaseActivity
 import com.ronney.nybooks.presentation.books.BooksActivity
 import com.ronney.nybooks.presentation.databind.DataBindActivity
 import com.ronney.nybooks.presentation.movies.MoviesActivity
+import kotlinx.android.synthetic.main.activity_menu.*
 
 class Menu : BaseActivity() {
 

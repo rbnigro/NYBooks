@@ -7,22 +7,19 @@ import android.os.Bundle
 import androidx.annotation.RequiresApi
 import com.ronney.nybooks.R
 import com.ronney.nybooks.presentation.base.BaseActivity
+import kotlinx.android.synthetic.main.activity_book_details.*
+import kotlinx.android.synthetic.main.include_toolbar.*
 
 class BookDetailsActivity: BaseActivity() {
-
-    private lateinit var binding: BookDetailBinding
-
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book_details)
 
-        binding = BookDetailBinding.inflate(layoutInflater)
+        setupToolBar(toolbarMain, R.string.book_details_title, true)
 
-        setupToolBar(binding.toolbarMain, R.string.book_details_title, true)
-
-        binding.bookDetailsTitle.text = intent.getStringExtra(EXTRA_TITLE)
-        binding.bookDetailsDescription.text = intent.getStringExtra(EXTRA_DESCRIPTION)
+        bookDetailsTitle.text = intent.getStringExtra(EXTRA_TITLE)
+        bookDetailsDescription.text = intent.getStringExtra(EXTRA_DESCRIPTION)
     }
 
     companion object {

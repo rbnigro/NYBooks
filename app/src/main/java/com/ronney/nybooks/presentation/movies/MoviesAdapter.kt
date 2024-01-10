@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ronney.nybooks.R
 import com.ronney.nybooks.data.model.Movie
+import kotlinx.android.synthetic.main.item_movie.view.*
 
 class MoviesAdapter(
     private val movies: List<Movie>,
@@ -28,8 +29,8 @@ class MoviesAdapter(
         private val onItemClickListener: ((movie: Movie) -> Unit)
     ) : RecyclerView.ViewHolder(itemView) {
 
-        private val displayTitle = binding.itemView.textTitle
-        private val mpaaRating = binding.itemView.textMpaa
+        private val displayTitle = itemView.textTitle
+        private val mpaaRating = itemView.textMpaa
 
         fun bindView(movie: Movie) {
             displayTitle.text = movie.displayTitle
